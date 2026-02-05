@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="preload" as="image" href="assets/down.png" />
+    <link rel="preload" as="image" href="assets/img/down.png" />
 
     <style>
       .soundButton{
@@ -33,12 +33,12 @@ justify-content:center;
             wrapper.classList.add("soundWrapper");
             const soundButton =  document.createElement('img');
             soundButton.classList.add("soundButton");
-            soundButton.src="assets/up.png"
+            soundButton.src="assets/img/up.png"
             soundButton.style.filter=`hue-rotate(${Math.random() * 360}deg)`
-      soundButton.addEventListener("mousedown",(sound)=>{       soundButton.src="asset/sdown.png"
+      soundButton.addEventListener("mousedown",(sound)=>{       soundButton.src="asset/img/down.png"
             })
                    soundButton.addEventListener("mouseup",(sound)=>{
-                     setTimeout(()=>{soundButton.src="assets/up.png"} ,100)
+                     setTimeout(()=>{soundButton.src="assets/img/up.png"} ,100)
             })
             wrapper.appendChild(soundButton)
             soundboard.appendChild(wrapper)}
